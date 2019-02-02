@@ -1,2 +1,2 @@
 # Dispute-UI
-UI for Dispute API
+UI for PayPal DisputeAPI
