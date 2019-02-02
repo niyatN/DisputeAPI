@@ -1,0 +1,65 @@
+.dispute_summary_div{
+    font: 200px;
+    padding: 1em;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+nav{
+    color: #FFF;
+}
+
+.bg-blue{
+    background-color: rgba(0, 69, 152,0.8);
+}
+
+.RESOLVED{
+    border: 1px solid rgb(131, 221, 123);
+    background-color: rgba(131, 221, 123, 0.4);
+}
+
+.OPEN{
+    border: 1px solid rgb(240, 237, 197);
+    background-color: rgba(240, 237, 197, 0.4);
+}
+
+.WAITING_FOR_SELLER_RESPONSE{
+    border: 1px solid rgb(236, 157, 126);
+    background-color: rgba(236, 157, 126, 0.4);
+}
+
+.WAITING_FOR_BUYER_RESPONSE{
+    border: 1px solid rgb(227, 126, 236);
+    background-color: rgba(227, 126, 236, 0.4);
+}
+
+.UNDER_REVIEW{
+    border: 1px solid rgb(126, 152, 236);
+    background-color: rgba(126, 152, 236, 0.4);
+}
+
+.OTHER{
+    border: 1px solid rgb(189, 184, 160);
+    background-color: rgba(189, 184, 160, 0.4);
+}
+
+.search_div{
+    border-radius: 5px;
+    
+    border: 1px solid rgb(126, 152, 236);
+    background-color: rgba(126, 152, 236, 0.4);
+    padding-bottom: 0.5em;
+    
+}
+
+.search_div>form>input{
+    text-align: center;    
+}
+
+.dispute_id_div{
+    /* margin: 1em; */
+    border-radius: 5px;
+    
+    border: 1px solid rgb(107, 107, 240);
+    background-color: rgba(107, 107, 240, 0.4);
+    color: rgb(255, 255, 255);
+}

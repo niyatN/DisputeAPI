@@ -1,0 +1,122 @@
+.OPEN{
+    background-color: rgba(206, 150, 150, 0.4);
+    border: 1px solid rgb(206, 150, 150);
+
+}
+
+.WAITING_FOR_SELLER_RESPONSE{
+    border: 1px solid rgb(162,0,255);
+    background-color: rgba(162,0,255, 0.25);
+}
+
+.WAITING_FOR_BUYER_RESPONSE{
+    border: 1px solid rgb(244,120,53);
+    background-color: rgba(244,120,53, 0.25);
+}
+
+.UNDER_REVIEW{
+    border: 1px solid rgb(212,18,67);
+    background-color: rgba(212,18,67, 0.4);
+}
+
+.OTHER{
+    border: 1px solid rgb(255,111,105);
+    background-color: rgba(255,111,105, 0.4);
+}
+
+.RESOLVED{
+    border: 1px solid rgb(142,193,39);
+    background-color: rgba(142,193,39, 0.4);
+}
+
+
+.timeline{
+    margin-top: 5px;
+    padding: 3px;
+}
+
+/* .dispute_detail{
+    background-color: #82b1ff;
+    color: #FFF;
+} */
+
+.brand-logo>img{
+    padding: 4px;
+    height: 53px;
+}
+
+
+.send_icon{
+    margin-top: 10px;
+    align-content: center;
+    align-items: center;
+}
+
+.action_div{
+    border: 2px solid rgba(119, 118, 118, 0.2);
+}
+
+.dispute_summary{
+    cursor: pointer;
+}
+.divBtn{
+    margin: 5px;
+}
+
+.dispute_reason{
+    font-size: 0.8em;
+}
+
+.message_by_SELLER>span{
+    background-color: rgba(46, 170, 228, 0.2);
+    border: 1px solid  rgb(174, 211, 228);
+    border-radius: 3px;
+    padding: 7px;
+    margin-right: 10px;
+   
+}
+
+.message_by_BUYER>span{
+    background-color: rgba(16, 27, 192, 0.2);
+    border: 1px solid  rgb(228, 186, 174);
+    border-radius: 3px;
+    padding: 7px;
+    margin-left: 10px;
+}
+
+.message_by_ARBITER>span{
+    background-color: rgba(240, 255, 249, 0.2);
+    border: 1px solid  rgb(228, 186, 174);
+    border-radius: 3px;
+    padding: 0.7;
+    margin-left: 10px;
+}
+
+.message_by_SELLER{
+    text-align: right;
+    font-size: 1em;
+}
+/* .message_by_BUYER{
+    text-align: left;
+    font-size: 1.5em;
+}
+.message_by_SELLER{
+    text-align: left;
+    font-size: 1.5em;
+} */
+.message_time_posted{
+    
+    font-size: 0.8em;
+    padding: 1em;
+}
+
+.preloader-div{
+   
+    margin-left: 50%;
+    margin-top: 12%;
+}
+
+.eligibility-table>table>tbody>tr>td{
+    /* overflow: hidden; */
+    font-size: 0.7em;
+}

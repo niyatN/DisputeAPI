@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link href="/assets/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <% include partials/nav.ejs %>
+        <div class="row">
+            
+            <div class= "col-md-4 dispute_id_div">
+                <h2><%= dispute_detail.dispute_id %> </h2>
+                <p><%= dispute_detail.disputed_transactions[0].buyer.name %></p>
+                <p><%= dispute_detail.create_time %></p>
+                <p><%= dispute_detail.update_time %></p>
+                <p><%= dispute_detail.reason %></p>
+                <p><%= dispute_detail.status %></p>
+                <p><%= dispute_detail.dispute_amount.value %><%= dispute_detail.dispute_amount.currency_code %></p>
+                <% if(dispute_detail.status=="RESOLVED") {%>
+                    <p><%= dispute_detail.dispute_outcome.outcome_code %></p>
+                <%} else {%>
+                    <p>Not Yet Resloved</p>
+                <%}%>
+            </div>    
+        </div>
+        
+    </div>
+
+    
+</body>
+</html>

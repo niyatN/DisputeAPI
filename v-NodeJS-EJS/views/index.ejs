@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link href="/assets/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <% include partials/nav.ejs %>
+        <div class="row justify-content-aound">
+            <div class="col-md-4 search_div form-group">
+            <h3>Get Dispute details by Start date </h3>
+                <form action="/get_disputes_bystarttime" method="GET">
+                    <input type="date" name="start_time" class ="form-control" required="required">
+                    <input type="submit" value="Get Dispute detail" class ="form-control">
+                </form>
+            </div>
+
+            <div class="col-md-4 search_div form-group">
+                    <h3>Get Dispute details by State </h3>
+                    <form action="/get_disputes_by_state" method="GET" >
+                        <select class="form-control" name ="dispute_state" >
+                                <option value="REQUIRED_ACTION">REQUIRED_ACTION</option>
+                                <option value="REQUIRED_OTHER_PARTY_ACTION">REQUIRED_OTHER_PARTY_ACTION</option>
+                                <option value="UNDER_PAYPAL_REVIEW">UNDER_PAYPAL_REVIEW</option>
+                                <option value="RESOLVED">RESOLVED</option>
+                                <option value="OPEN_INQUIRIES">OPEN_INQUIRIES</option>                                
+                        </select>
+                        <input type="submit" value="Get Dispute detail" placeholder="Select dispute state" class ="form-control">
+                    </form>
+            </div>
+
+            <div class="col-md-4 search_div form-group">
+                <h3>Get Dispute details by dispute id </h3>
+                <hr>
+                <form action="/get_dispute_detail" method="GET" >
+                    <input type="text" name="dispute_id" class ="form-control" required="required" style="text-transform:uppercase"><br>
+                    <input type="submit" value="Get Dispute detail" class ="form-control">
+                </form>
+        </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
